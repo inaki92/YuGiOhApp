@@ -11,7 +11,7 @@ class CardsApplication : Application() {
 
         startKoin {
             androidContext(this@CardsApplication)
-            modules(listOf(networkModule))
+            modules(listOf(networkModule, viewModelModule))
         }
     }
 }
